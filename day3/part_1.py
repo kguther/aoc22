@@ -1,10 +1,9 @@
-from priorities import duplicate_priorities
 from rucksack import read_items
 
 
 def main():
     rucksacks = read_items("input")
-    duplicates = [duplicate_priorities(rucksack) for rucksack in rucksacks]
+    duplicates = [rucksack.duplicate_priorities() for rucksack in rucksacks]
     print(sum(duplicates))
 
 

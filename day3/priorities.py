@@ -9,6 +9,3 @@ def priority(item):
     return offset + string.ascii_lowercase.find(item.lower())
 
 
-def duplicate_priorities(rucksack):
-    duplicates = rucksack.duplicate_items()
-    return sum(priority(item) for item in duplicates)
