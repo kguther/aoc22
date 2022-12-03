@@ -8,7 +8,7 @@ class Rucksack:
         self._compartment_2 = items[compartment_size:len(items)]
 
     def duplicate_items(self):
-        return {item for item in self._compartment_2 if item in self._compartment_1}
+        return set(self._compartment_2) & set(self._compartment_1)
 
     def duplicate_priorities(self):
         duplicates = self.duplicate_items()
