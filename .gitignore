@@ -2,3 +2,9 @@
 *input_test
 *~
 *target
+*.idea/
+*.project
+*/.settings/*
+*/__pycache__/*
+*/.cproject*
+*Debug/
