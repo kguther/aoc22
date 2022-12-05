@@ -29,7 +29,7 @@ Supplies Supplies::from_file(const std::string &filename) {
 	while(true){
 		inputfile >> std::ws;
 		std::getline(inputfile, line);
-		if(line[0] != '['){
+		if(line[1] == '1'){
 			break;
 		}
 		read_stacks(line, stacks);
